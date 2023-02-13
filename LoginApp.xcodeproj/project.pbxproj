@@ -9,21 +9,23 @@
 /* Begin PBXBuildFile section */
 		ABFB6BA2299A3322005A22B3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABFB6BA1299A3322005A22B3 /* AppDelegate.swift */; };
 		ABFB6BA4299A3322005A22B3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABFB6BA3299A3322005A22B3 /* SceneDelegate.swift */; };
-		ABFB6BA6299A3322005A22B3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABFB6BA5299A3322005A22B3 /* ViewController.swift */; };
+		ABFB6BA6299A3322005A22B3 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABFB6BA5299A3322005A22B3 /* LoginViewController.swift */; };
 		ABFB6BA9299A3322005A22B3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABFB6BA7299A3322005A22B3 /* Main.storyboard */; };
 		ABFB6BAB299A3323005A22B3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = ABFB6BAA299A3323005A22B3 /* Assets.xcassets */; };
 		ABFB6BAE299A3323005A22B3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABFB6BAC299A3323005A22B3 /* LaunchScreen.storyboard */; };
+		ABFB6BB6299A381C005A22B3 /* WelcomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABFB6BB5299A381C005A22B3 /* WelcomeViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		ABFB6B9E299A3322005A22B3 /* LoginApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoginApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABFB6BA1299A3322005A22B3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ABFB6BA3299A3322005A22B3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		ABFB6BA5299A3322005A22B3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		ABFB6BA5299A3322005A22B3 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		ABFB6BA8299A3322005A22B3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		ABFB6BAA299A3323005A22B3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		ABFB6BAD299A3323005A22B3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		ABFB6BAF299A3323005A22B3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ABFB6BB5299A381C005A22B3 /* WelcomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WelcomeViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,7 +60,8 @@
 			children = (
 				ABFB6BA1299A3322005A22B3 /* AppDelegate.swift */,
 				ABFB6BA3299A3322005A22B3 /* SceneDelegate.swift */,
-				ABFB6BA5299A3322005A22B3 /* ViewController.swift */,
+				ABFB6BA5299A3322005A22B3 /* LoginViewController.swift */,
+				ABFB6BB5299A381C005A22B3 /* WelcomeViewController.swift */,
 				ABFB6BA7299A3322005A22B3 /* Main.storyboard */,
 				ABFB6BAA299A3323005A22B3 /* Assets.xcassets */,
 				ABFB6BAC299A3323005A22B3 /* LaunchScreen.storyboard */,
@@ -138,7 +141,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				ABFB6BA6299A3322005A22B3 /* ViewController.swift in Sources */,
+				ABFB6BA6299A3322005A22B3 /* LoginViewController.swift in Sources */,
+				ABFB6BB6299A381C005A22B3 /* WelcomeViewController.swift in Sources */,
 				ABFB6BA2299A3322005A22B3 /* AppDelegate.swift in Sources */,
 				ABFB6BA4299A3322005A22B3 /* SceneDelegate.swift in Sources */,
 			);
@@ -302,9 +306,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = Panferov.Creator.LoginApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -330,9 +337,12 @@
 				MARKETING_VERSION = 1.0;
 				PRODUCT_BUNDLE_IDENTIFIER = Panferov.Creator.LoginApp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
