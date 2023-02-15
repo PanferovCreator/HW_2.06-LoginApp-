@@ -16,11 +16,7 @@ final class WelcomeViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        welcomeLabel.text = welcomeText
-    }
-    
-    @IBAction func logOutTapped() {
-        dismiss(animated: true)
+        welcomeLabel.text = "Welcome, \(welcomeText ?? "") !"
     }
     
 }
