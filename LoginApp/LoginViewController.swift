@@ -13,25 +13,29 @@ final class LoginViewController: UIViewController {
     @IBOutlet var userTextField: UITextField!
     @IBOutlet var passwordTextField: UITextField!
     
+    let userName = "www"
+    let password = "www"
+    
     // MARK: - override func
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         guard let welcomeVC = segue.destination as? WelcomeViewController else {return}
-        welcomeVC.welcomeText = "Welcome, \(userTextField.text ?? "" ) !"
+        welcomeVC.welcomeText = userTextField.text ?? "" 
         
     }
         
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
+        super.touchesBegan(touches, with: event)
         view.endEditing(true)
     }
 
     // MARK: - IBActions
     @IBAction func loginButtonTapped() {
-        if userTextField.text != "www" && passwordTextField.text != "www" {
+        if userTextField.text == userName && passwordTextField.text == password {
+        } else {
             showAlert(
                 withTitle: "Invalid login or password",
                 andMessage: "Please, enter correct login and password"
             )
-            passwordTextField.text = ""
         }
     }
     
@@ -54,10 +58,11 @@ final class LoginViewController: UIViewController {
         let alert = UIAlertController(
             title: title,
             message: message,
-            preferredStyle: .alert)
+            preferredStyle: .alert
+        )
         let okAction = UIAlertAction(title: "OK", style: .default)
         alert.addAction(okAction)
-        present(alert, animated: true)
+        present(alert, animated: true) {self.passwordTextField.text = ""}
     }
 }
 
