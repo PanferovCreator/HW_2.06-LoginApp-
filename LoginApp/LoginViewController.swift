@@ -54,6 +54,7 @@ final class LoginViewController: UIViewController {
         passwordTextField.text = ""
     }
     
+    // MARK: - Add UIAlertController
     private func showAlert(withTitle title: String, andMessage message: String) {
         let alert = UIAlertController(
             title: title,
