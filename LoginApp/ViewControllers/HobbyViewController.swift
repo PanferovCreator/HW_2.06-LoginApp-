@@ -9,12 +9,10 @@ import UIKit
 
 final class HobbyViewController: UIViewController {
 
- 
     @IBOutlet var hobbyLabel: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
         hobbyLabel.text = user.person.hobbyInformation
     }
 }
