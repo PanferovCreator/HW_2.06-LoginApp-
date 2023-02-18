@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		AB5AFDEF29A0E7F2002792B1 /* HobbyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB5AFDEE29A0E7F2002792B1 /* HobbyViewController.swift */; };
+		ABC60B4D299E2E35008A66D0 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABC60B4C299E2E35008A66D0 /* User.swift */; };
+		ABC60B4F299E51AD008A66D0 /* UserViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABC60B4E299E51AD008A66D0 /* UserViewController.swift */; };
+		ABC60B51299E51C2008A66D0 /* BioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABC60B50299E51C2008A66D0 /* BioViewController.swift */; };
+		ABC60B53299E78A0008A66D0 /* CompanyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABC60B52299E78A0008A66D0 /* CompanyViewController.swift */; };
 		ABFB6BA2299A3322005A22B3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABFB6BA1299A3322005A22B3 /* AppDelegate.swift */; };
 		ABFB6BA4299A3322005A22B3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABFB6BA3299A3322005A22B3 /* SceneDelegate.swift */; };
 		ABFB6BA6299A3322005A22B3 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = ABFB6BA5299A3322005A22B3 /* LoginViewController.swift */; };
@@ -17,6 +22,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		AB5AFDEE29A0E7F2002792B1 /* HobbyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HobbyViewController.swift; sourceTree = "<group>"; };
+		ABC60B4C299E2E35008A66D0 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		ABC60B4E299E51AD008A66D0 /* UserViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserViewController.swift; sourceTree = "<group>"; };
+		ABC60B50299E51C2008A66D0 /* BioViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BioViewController.swift; sourceTree = "<group>"; };
+		ABC60B52299E78A0008A66D0 /* CompanyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyViewController.swift; sourceTree = "<group>"; };
 		ABFB6B9E299A3322005A22B3 /* LoginApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LoginApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABFB6BA1299A3322005A22B3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		ABFB6BA3299A3322005A22B3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -39,6 +49,46 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		ABC60B46299E1F2E008A66D0 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				ABFB6BA1299A3322005A22B3 /* AppDelegate.swift */,
+				ABFB6BA3299A3322005A22B3 /* SceneDelegate.swift */,
+				ABFB6BAF299A3323005A22B3 /* Info.plist */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		ABC60B47299E1F5E008A66D0 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				ABFB6BA7299A3322005A22B3 /* Main.storyboard */,
+				ABFB6BAC299A3323005A22B3 /* LaunchScreen.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		ABC60B48299E1F84008A66D0 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				ABFB6BA5299A3322005A22B3 /* LoginViewController.swift */,
+				ABFB6BB5299A381C005A22B3 /* WelcomeViewController.swift */,
+				ABC60B4E299E51AD008A66D0 /* UserViewController.swift */,
+				ABC60B50299E51C2008A66D0 /* BioViewController.swift */,
+				ABC60B52299E78A0008A66D0 /* CompanyViewController.swift */,
+				AB5AFDEE29A0E7F2002792B1 /* HobbyViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		ABC60B4B299E1FD2008A66D0 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				ABC60B4C299E2E35008A66D0 /* User.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		ABFB6B95299A3322005A22B3 = {
 			isa = PBXGroup;
 			children = (
@@ -58,14 +108,11 @@
 		ABFB6BA0299A3322005A22B3 /* LoginApp */ = {
 			isa = PBXGroup;
 			children = (
-				ABFB6BA1299A3322005A22B3 /* AppDelegate.swift */,
-				ABFB6BA3299A3322005A22B3 /* SceneDelegate.swift */,
-				ABFB6BA5299A3322005A22B3 /* LoginViewController.swift */,
-				ABFB6BB5299A381C005A22B3 /* WelcomeViewController.swift */,
-				ABFB6BA7299A3322005A22B3 /* Main.storyboard */,
+				ABC60B48299E1F84008A66D0 /* ViewControllers */,
+				ABC60B4B299E1FD2008A66D0 /* Models */,
+				ABC60B47299E1F5E008A66D0 /* Storyboards */,
+				ABC60B46299E1F2E008A66D0 /* App */,
 				ABFB6BAA299A3323005A22B3 /* Assets.xcassets */,
-				ABFB6BAC299A3323005A22B3 /* LaunchScreen.storyboard */,
-				ABFB6BAF299A3323005A22B3 /* Info.plist */,
 			);
 			path = LoginApp;
 			sourceTree = "<group>";
@@ -141,9 +188,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ABC60B51299E51C2008A66D0 /* BioViewController.swift in Sources */,
 				ABFB6BA6299A3322005A22B3 /* LoginViewController.swift in Sources */,
+				ABC60B4F299E51AD008A66D0 /* UserViewController.swift in Sources */,
+				AB5AFDEF29A0E7F2002792B1 /* HobbyViewController.swift in Sources */,
 				ABFB6BB6299A381C005A22B3 /* WelcomeViewController.swift in Sources */,
+				ABC60B53299E78A0008A66D0 /* CompanyViewController.swift in Sources */,
 				ABFB6BA2299A3322005A22B3 /* AppDelegate.swift in Sources */,
+				ABC60B4D299E2E35008A66D0 /* User.swift in Sources */,
 				ABFB6BA4299A3322005A22B3 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -293,12 +345,12 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 56TGU6D7YV;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = LoginApp/Info.plist;
+				INFOPLIST_FILE = LoginApp/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -325,12 +377,12 @@
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 56TGU6D7YV;
 				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = LoginApp/Info.plist;
+				INFOPLIST_FILE = LoginApp/App/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
 				IPHONEOS_DEPLOYMENT_TARGET = 15.4;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
