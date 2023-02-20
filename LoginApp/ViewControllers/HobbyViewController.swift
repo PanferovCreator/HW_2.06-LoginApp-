@@ -11,6 +11,8 @@ final class HobbyViewController: UIViewController {
 
     @IBOutlet var hobbyLabel: UILabel!
     
+    var user: User!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         hobbyLabel.text = user.person.hobbyInformation

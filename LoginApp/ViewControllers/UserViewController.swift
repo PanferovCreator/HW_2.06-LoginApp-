@@ -17,23 +17,11 @@ final class UserViewController: UIViewController {
     @IBOutlet var divisionLabel: UILabel!
     @IBOutlet var positionLabel: UILabel!
     
-    private let primaryColor = UIColor(
-        red: 210/255,
-        green: 109/255,
-        blue: 128/255,
-        alpha: 1
-    )
-
-    private let secondaryColor = UIColor(
-        red: 107/255,
-        green: 148/255,
-        blue: 230/255,
-        alpha: 1
-    )
-
+    var user: User!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.addVerticalGradientLayer(topColor: primaryColor, bottomColor: secondaryColor)
+        view.addVerticalGradientLayer()
         
         navigationItem.backButtonTitle = "\(user.person.name) \(user.person.surname)"
         navigationItem.title = "\(user.person.name) \(user.person.surname)"
@@ -46,5 +34,9 @@ final class UserViewController: UIViewController {
         divisionLabel.text = user.person.division
         positionLabel.text = user.person.position
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        guard let bioVC = segue.destination as? BioViewController else {return}
+        bioVC.user = user
+    }
 }
-
